@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Program Ranker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Medical Program Ranker</h1>
+        <p>Sort the programs into tiers first. Then rank them using pairwise comparisons.</p>
+        
+        <div id="tier-section">
+            <h2>Step 1: Tier Sorting</h2>
+            <div class="grid">
+                <div class="tier" data-tier="top">Top Choice</div>
+                <div class="tier" data-tier="good">Good</div>
+                <div class="tier" data-tier="okay">Okay</div>
+                <div class="tier" data-tier="no">No Way</div>
+            </div>
+            <div id="program-list"></div>
+            <button id="start-ranking" class="hidden">Start Ranking</button>
+        </div>
+        
+        <div id="ranking-section" class="hidden">
+            <h2>Step 2: Pairwise Comparison</h2>
+            <div id="comparison">
+                <button class="option-btn">Option 1</button>
+                <button class="option-btn">Option 2</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
